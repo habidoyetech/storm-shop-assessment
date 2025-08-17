@@ -19,6 +19,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import WorkRoundedIcon from '@mui/icons-material/WorkRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import LoginIcon from '@mui/icons-material/Login';
+import GroupAddIcon from '@mui/icons-material/GroupAdd';
 import DiamondRoundedIcon from '@mui/icons-material/DiamondRounded';
 import Logo from '../img/logo512.png'
 
@@ -84,8 +86,8 @@ function App() {
                         </a>
                         <Typography noWrap component='nav' className={`${resStyles('header_nav', resolution)}`}>
                             <Toolbar className={resStyles("nav_block", resolution)}>
-                                <Link to="/"><PinkButton sx={buttonStyles} startIcon={<DiamondRoundedIcon style={{ marginRight: '4px' }} />}>SUBSCRIPTIONS</PinkButton></Link>
-                                <Link to="/scripts"><BlueButton sx={buttonStyles} startIcon={<CodeRoundedIcon style={{ marginRight: '4px' }} />}>SCRIPTS</BlueButton></Link>
+                                <Link to="/signup"><PinkButton sx={buttonStyles} startIcon={<GroupAddIcon style={{ marginRight: '4px' }} />}>CREATE ACCOUNT</PinkButton></Link>
+                                <Link to="/login"><BlueButton sx={buttonStyles} startIcon={<LoginIcon style={{ marginRight: '4px' }} />}>LOGIN ACCOUNT</BlueButton></Link>
                             </Toolbar>
 
                             <span style={{ fontSize: '32px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>|</span>
@@ -125,10 +127,10 @@ function App() {
                                 }}
                             >
                                 <MenuItem sx={{ padding: '10px 36px' }} onClick={handleCloseBurgerMenu}>
-                                    <DiamondRoundedIcon style={{ marginRight: '12px', fontSize: '20px' }} /> <span style={{ fontSize: '20px' }}>SUBSCRIPTIONS</span>
+                                    <Link to="/signup" style={{color: 'white', textDecoration: 'none',}}><GroupAddIcon style={{ marginRight: '12px', fontSize: '20px' }} /> <span style={{ fontSize: '20px' }}>CREATE ACCOUNT</span></Link> 
                                 </MenuItem>
                                 <MenuItem sx={{ padding: '10px 36px' }} onClick={handleCloseBurgerMenu}>
-                                    <CodeRoundedIcon style={{ marginRight: '12px', fontSize: '20px' }} /> <span style={{ fontSize: '20px' }}>SCRIPTS</span>
+                                    <Link to="/login" style={{color: 'white', textDecoration: 'none',}}><LoginIcon style={{ marginRight: '12px', fontSize: '20px' }} /> <span style={{ fontSize: '20px' }}>LOGIN ACCOUNT</span></Link> 
                                 </MenuItem>
                                 <MenuItem sx={{ padding: '10px 36px' }} onClick={handleCloseBurgerMenu}>
                                     <Person2RoundedIcon style={{ marginRight: '12px', fontSize: '20px' }} /> <span style={{ fontSize: '20px' }}>SUPPORT</span>
