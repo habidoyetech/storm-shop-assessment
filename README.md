@@ -10,7 +10,7 @@ What about scripts? You can easily buy them on our [website](https://nitro-storm
 # How to Install
 
 ```
-git clone https://tailormind-design-studio-admin@bitbucket.org/tailormind-design-studio/storm-shop.git
+git clone https://github.com/habidoyetech/storm-shop-assessment.git
 
 npm install
 
@@ -19,9 +19,7 @@ npm start
 
 # Basic Technical Test
 
-![Logo](public/landing.PNG)
+![Logo](public/landingnew.png)
 
-1. Remove Subscripts and Scripts Buttons from header
-2. Instead, add `Create Account` and `Login Account` buttons
-
-In order to submit your test, create a github repository and push all your changes to this repository and share the repository link with your recruiter.
+1. Removed Subscripts and Scripts Buttons from header
+2. Added `Create Account` and `Login Account` buttons
